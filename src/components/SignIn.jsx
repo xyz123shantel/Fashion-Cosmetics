@@ -72,10 +72,10 @@ const SignIn = () => {
                       <input type="password" placeholder="Enter password" required id="password" className="form-control" onChange={(e) => setPassword(e.target.value)} /><br />
                       <span className="input-group-text" onClick={togglePassword}><i id="icon" class="bi bi-eye-fill"></i></span>
                 </div>
-                <button className="btn btn-primary" type="submit">Signin</button>
+                <button className="btn btn-info text-dark" type="submit">Signin</button>
             </form>
 
-            <p className="bd-info">Don't have an account? <Link to="/signup">Sign Up </Link></p>
+            <p className="bd-info">Don't have an account? <Link to="/signup" className="text-white">Sign Up </Link></p>
         </div>
      </div>
      );

@@ -8,6 +8,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import SingleProduct from './components/SingleProduct';
 import "bootstrap-icons/font/bootstrap-icons.min.css"
+import ChatBot from './components/ChatBot';
+import ContactUs from './components/ContactUs';
+import Navbar from './components/Navbar';
+import Cart from './components/Cart';
+import AboutUs from'./components/AboutUs';
+import TermsAndConditions from './components/TermsAndConditions';
+//                 {success && <b className="text-success">{success}</b>}
+
 
 
 
@@ -19,6 +27,7 @@ function App() {
     <div className="App">
       <header className="App-header">
     <h1>Fashion & Cosmetict Shop</h1>
+    <Navbar/>
       </header>
       <Routes>
         <Route path="/signup" element={<SignUp/>} />
@@ -26,6 +35,13 @@ function App() {
         <Route path="/addproduct" element={<AddProducts/>} />
         <Route path="/"element={<GetProducts/>} />
         <Route path="/singleproduct" element={<SingleProduct/>} />
+        <Route path="/chatbot" element={<ChatBot/>}/>
+        <Route path='/contactus' element={<ContactUs/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path='/aboutus' element={<AboutUs/>} />
+        <Route path="/terms" element={<TermsAndConditions/>} />
+
+       
         
       </Routes>
     </div>
